@@ -1,0 +1,6 @@
+<%= render partial: 'new' %>
+
+<% @courses.each do |course| %>
+  <%= link_to "#{course.name}", course_path(course.id) %>
+  <br>
+<% end %>

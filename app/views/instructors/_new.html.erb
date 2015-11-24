@@ -1,0 +1,24 @@
+<%= form_for @instructor do |f| %>
+  <%= f.text_field :name, placeholder: 'instructor name' %>
+  <br>
+  <%= f.email_field :email, placeholder: 'instructor email' %>
+  <br>
+  <%= f.select(:location_id) do %>
+    <% @locations.each do |c| %>
+      <%= content_tag(:option, c.name, value: c.id) %>
+    <% end %>
+  <% end %>
+  <br>
+
+  <%= f.select(:course_id) do %>
+    <% @courses.each do |c| %>
+      <%= content_tag(:option, c.name, value: c.id) %>
+    <% end %>
+  <% end %>
+  <br>
+  <%= f.label 'Is a TA?' %>
+
+  <%= f.check_box :ta %>
+  <br>
+  <%= f.submit 'Create a new instructor' %>
+<% end %>

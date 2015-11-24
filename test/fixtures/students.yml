@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  location_id: 1
+  course_id: 1
+  instructor_id: 1
+  google_q: 1
+  html_q: 1
+  css_q: 1
+  js_q: 1
+  jq_q: 1
+  command_q: 1
+  git_q: 1
+  ruby_q: 1
+  sinatra_q: 1
+  rails_q: 1
+  mvc_q: 1
+  db_q: 1
+
+two:
+  name: MyString
+  location_id: 1
+  course_id: 1
+  instructor_id: 1
+  google_q: 1
+  html_q: 1
+  css_q: 1
+  js_q: 1
+  jq_q: 1
+  command_q: 1
+  git_q: 1
+  ruby_q: 1
+  sinatra_q: 1
+  rails_q: 1
+  mvc_q: 1
+  db_q: 1

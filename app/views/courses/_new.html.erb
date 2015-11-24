@@ -1,0 +1,13 @@
+<%= form_for @course do |f|  %>
+  <%= f.text_field :name %>
+  <br>
+
+  <%= f.select(:location_id) do %>
+    <% @locations.each do |c| %>
+      <%= content_tag(:option, c.name, value: c.id) %>
+    <% end %>
+  <% end %>
+  <br>
+
+  <%= f.submit 'Create a new course' %>
+<% end %>

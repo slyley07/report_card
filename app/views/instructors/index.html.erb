@@ -1,0 +1,5 @@
+<%= render partial: 'new' %>
+
+<% @instructors.each do |instr| %>
+  <%= link_to "#{instr.name}", instructor_path(instr.id) %>
+<% end %>

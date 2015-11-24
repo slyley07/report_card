@@ -1,0 +1,56 @@
+// Place all the styles related to the students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 960px;
+  margin: 0 auto;
+
+  .questions {
+    border: 1px solid black;
+    margin: 2px auto;
+    width: 960px;
+
+    .label {
+      font-weight: bold;
+    }
+
+    .answers {
+      width: 860px;
+      margin: 0 auto;
+    }
+
+    .radio {
+      display: inline-block;
+      // border-left: 1px solid black;
+      // border-right: 1px solid black;
+      width: 140px;
+      margin: 0 auto;
+
+        input[type="radio"] {
+          // text-align: center;
+          margin: 5px auto;
+          // width: 10px;
+          display: block;
+      }
+    }
+  }
+
+  .submit {
+    width: 100px;
+    margin: 0 auto;
+
+    input[type="submit"] {
+      height: 40px;
+      background-color: #FFFFFF;
+      border: 1px solid black;
+      font-size: 30px;
+      font-family: Arial;
+      margin-top: 10px;
+    }
+  }
+}

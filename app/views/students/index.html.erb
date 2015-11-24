@@ -1,0 +1,7 @@
+<%= render partial: 'new' %>
+
+<% if @students.length > 0 %>
+  <% @students.each do |student| %>
+    <%= link_to "#{student.name}", student_path(student.id) %>
+  <% end %>
+<% end %>

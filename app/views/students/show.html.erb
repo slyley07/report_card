@@ -1,0 +1,536 @@
+<h1>
+  <%= @student.name %>
+</h1>
+
+<%= form_for @student do |f| %>
+  <div class="questions">
+    <div class="label">
+      <%= f.label "Google/research methods" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :google_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :google_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :google_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :google_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :google_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :google_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :google_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :google_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :google_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :google_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :google_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :google_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "HTML" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :html_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :html_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :html_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :html_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :html_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :html_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :html_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :html_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :html_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :html_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :html_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :html_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "CSS" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :css_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :css_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :css_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :css_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :css_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :css_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :css_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :css_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :css_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :css_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :css_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :css_q, 6 %>
+      </div>
+    </div>
+  </div>
+  <div class="questions">
+    <div class="label">
+      <%= f.label "JavaScript" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :js_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :js_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :js_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :js_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :js_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :js_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :js_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :js_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :js_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :js_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :js_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :js_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "jQuery" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :jq_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :jq_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :jq_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :jq_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :jq_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :jq_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :jq_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :jq_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :jq_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :jq_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :jq_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :jq_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "Commandline" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :command_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :command_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :command_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :command_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :command_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :command_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :command_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :command_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :command_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :command_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :command_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :command_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "Git and GitHub" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :git_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :git_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :git_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :git_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :git_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :git_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :git_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :git_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :git_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :git_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :git_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :git_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "Ruby" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :ruby_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :ruby_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :ruby_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :ruby_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :ruby_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :ruby_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :ruby_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :ruby_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :ruby_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :ruby_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :ruby_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :ruby_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "Sinatra" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :sinatra_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :sinatra_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :sinatra_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :sinatra_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :sinatra_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :sinatra_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :sinatra_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :sinatra_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :sinatra_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :sinatra_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :sinatra_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :sinatra_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "Rails" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :rails_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :rails_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :rails_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :rails_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :rails_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :rails_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :rails_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :rails_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :rails_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :rails_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :rails_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :rails_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "MVC" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :mvc_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :mvc_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :mvc_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :mvc_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :mvc_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :mvc_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :mvc_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :mvc_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :mvc_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :mvc_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :mvc_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :mvc_q, 6 %>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    <div class="label">
+      <%= f.label "Database Theory" %>
+    </div>
+
+    <div class="answers">
+      <div class="radio">
+        <%= f.label :db_q, "Above and beyond graduation level", value: 0 %>
+        <br>
+        <%= f.radio_button :db_q, 0 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :db_q, "Is proficient on their own (Graduation level)", value: 1 %>
+        <br>
+        <%= f.radio_button :db_q, 1 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :db_q, "Can put into practice without guidance", value: 3 %>
+        <br>
+        <%= f.radio_button :db_q, 3 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :db_q, "Can put some into practice, but needs guidance", value: 4 %>
+        <br>
+        <%= f.radio_button :db_q, 4 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :db_q, "Understands basics, can't put into practice", value: 5 %>
+        <br>
+        <%= f.radio_button :db_q, 5 %>
+      </div>
+
+      <div class="radio">
+        <%= f.label :db_q, "Doesn't understand basic concepts", value: 6 %>
+        <br>
+        <%= f.radio_button :db_q, 6 %>
+      </div>
+    </div>
+  </div>
+  
+  <div class="submit">
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>

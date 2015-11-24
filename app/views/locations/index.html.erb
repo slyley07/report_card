@@ -1,0 +1,6 @@
+<%= render partial: 'new' %>
+
+<% @locations.each do |loc| %>
+  <%= link_to "#{loc.name}", location_path(loc.id) %>
+  <br>
+<% end %>

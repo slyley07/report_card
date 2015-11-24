@@ -7,6 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= flash[:notice] if flash[:notice] %>
+
+  <%= flash[:alert] if flash[:alert] %>
+
+  <nav>
+    <ul>
+      <li>
+        <%= link_to 'Add a location', locations_path %>
+      </li>
+
+      <li>
+        <%= link_to 'Add a course', courses_path %>
+      </li>
+
+      <li>
+        <%= link_to 'Add an instructor', instructors_path %>
+      </li>
+
+      <li><%= link_to 'Add a student', students_path %></li>
+    </ul>
+  </nav>
 
 <%= yield %>
 

@@ -1,0 +1,29 @@
+<%= form_for @student do |f| %>
+  <%= f.text_field :name, placeholder: 'student name' %>
+  <br>
+  <%= f.email_field :email, placeholder: 'student email' %>
+  <br>
+  <%= f.select(:location_id) do %>
+    <% @locations.each do |c| %>
+      <%= content_tag(:option, c.name, value: c.id) %>
+    <% end %>
+  <% end %>
+  <br>
+
+  <%= f.select(:course_id) do %>
+    <% @courses.each do |c| %>
+      <%= content_tag(:option, c.name, value: c.id) %>
+    <% end %>
+  <% end %>
+  <br>
+
+  <%= f.select(:instructor_id) do %>
+    <% @instructors.each do |c| %>
+      <% if c.ta == false %>
+        <%= content_tag(:option, c.name, value: c.id) %>
+      <% end %>
+    <% end %>
+  <% end %>
+  <br>
+  <%= f.submit 'Create a new student' %>
+<% end %>

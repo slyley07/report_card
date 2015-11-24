@@ -1,0 +1,9 @@
+<h1>
+  <%= @location.name %>
+</h1>
+<p>
+  <br>
+  <% @location.courses.each do |course| %>
+    <%= link_to "#{course.name}", course_path(course.id) %>
+  <% end %>
+</p>
