@@ -14,7 +14,6 @@ class CoursesController < ApplicationController
   end
 
   def create
-    p "#{params[:location_id]} ***********"
     @course = Course.new(course_params)
     if @course.save
       flash[:notice] = "#{@course.name} has been added"
@@ -26,10 +25,17 @@ class CoursesController < ApplicationController
   end
 
   def show
-    @location = Location.find(@course.location_id)
+    @locations = @course.locations
+    p "#{@locations.first} ******************"
+    @instructors = @course.instructors
   end
 
   def edit
+  end
+
+  def remove
+    @course.location_id = nil
+    render nothing: true
   end
 
   def destroy

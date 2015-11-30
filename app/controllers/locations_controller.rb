@@ -22,6 +22,14 @@ class LocationsController < ApplicationController
   end
 
   def show
+    @courses = @location.courses.all
+    @instructors = @location.instructors
+  end
+
+  def edit
+  end
+
+  def update
   end
 
   def destroy

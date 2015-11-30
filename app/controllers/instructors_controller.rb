@@ -28,7 +28,14 @@ class InstructorsController < ApplicationController
   end
 
   def edit
+  end
 
+  def remove
+    @instructor.location_id = nil
+    render nothing: true
+  end
+
+  def update
   end
 
   private

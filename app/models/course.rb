@@ -1,3 +1,4 @@
 class Course < ActiveRecord::Base
-  has_one :location
+  has_many :locations
+  has_many :instructors
 end

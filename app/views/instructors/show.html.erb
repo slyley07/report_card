@@ -3,9 +3,15 @@
 </h1>
 
 <p>
-  <%= @course.name %>
+  <%= link_to "#{@course.name}", course_path(@course.id) %>
 </p>
 
 <p>
-  <%= @location.name %>
+  <%= link_to "#{@location.name}", location_path(@location.id) %>
 </p>
+
+<% if @instructor.ta %>
+  <p>
+    TA
+  </p>
+<% end %>

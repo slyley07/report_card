@@ -1,6 +1,23 @@
 <h1>
   <%= @course.name %>
 </h1>
-<p>
-  <%= link_to "#{@location.name}", location_path(@location.id)  %>
+
+
 </p>
+
+<ul>
+  <% @locations.each do |loc| %>
+    <li>
+      <%= link_to "#{loc.name}", location_path(loc.id)  %>
+    </li>
+    <ul>
+      <% @instructors.each do |instr| %>
+        <% if loc.id == instr.location_id %>
+          <li>
+            <%= instr.name %>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  <% end %>
+</ul>

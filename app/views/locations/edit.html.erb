@@ -1,0 +1,29 @@
+<%= render 'new' %>
+
+<h2>
+  Courses at this location
+</h2>
+<ul>
+
+<% @location.courses.each do |course| %>
+  <li>
+    <%= link_to "#{course.name}", course_path(course.id) %>
+    <%= link_to "X", remove_course_path(course.id) %>
+  </li>
+<% end %>
+</ul>
+
+<h2>
+  Instructors at this location
+</h2>
+
+
+<ul>
+
+<% @location.instructors.each do |instr| %>
+  <li>
+    <%= instr.name %>
+    <%= link_to "X", remove_instructor_path(instr.id) %>
+  </li>
+<% end %>
+</ul>

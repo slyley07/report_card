@@ -25,7 +25,19 @@
         <%= link_to 'Add an instructor', instructors_path %>
       </li>
 
-      <li><%= link_to 'Add a student', students_path %></li>
+      <li>
+        <%= link_to 'Add a student', students_path %>
+      </li>
+
+        <% if current_admin %>
+          <li>
+            <%= link_to 'Sign out', signout_path, method: :delete %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to 'Sign in', signin_path %>
+          </li>
+        <% end %>
     </ul>
   </nav>
 

@@ -1,5 +1,17 @@
 <%= render partial: 'new' %>
 
-<% @instructors.each do |instr| %>
-  <%= link_to "#{instr.name}", instructor_path(instr.id) %>
-<% end %>
+<h2>
+  Instructors
+</h2>
+
+<ul>
+  <% @instructors.each do |instr| %>
+    <li>
+      <%= link_to "#{instr.name}", instructor_path(instr.id) %>
+
+      <% if instr.ta %>
+        <span> (TA)</span>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
